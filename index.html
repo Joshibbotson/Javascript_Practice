@@ -8,14 +8,20 @@
 </head>
 <body>
    <script>
-       function capitalise (word) {
-            let name = "smAll woRlD wE Live in"
-            
-            console.log(name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() )
-         
-    }  
-     capitalise (name)
-    
+       let answer = parseInt(prompt("Write here"));
+       
+       for (let i = 1; i <= answer; i++) 
+       {if (i % 3 === 0) {
+               console.log("Fizz");
+           } 
+           {if (i % 5 === 0){
+               console.log("Buzz");
+            }
+           {if (i % 3 === 0 && i % 5 === 0){
+                console.log("Fizz Buzz");
+            } else console.log(i);}
+        }
+        }
     </script>
 </body>
 </html>
